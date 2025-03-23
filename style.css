@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+} */
+
+.name {
+  justify-content: center;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  background-color: #0f172a;
+  padding: 1rem;
+  /* max-width: 1200px; */
+  width: clamp(350px, 50%, 1000px);
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;;
+  animation: colorSchemeTransition 0.5s ease-out;
+}
+
+h1, h2 {
+  color: #f8fafc;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.75rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 1.75rem;
+  position: relative;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: calc(1rem * 0.5);
+}
+
+section {
+  margin-bottom: calc(1rem * 2);
+  padding: 1rem;
+  background-color: #1e293b;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #334155;
+}
+/* 
+body, a, button, input, select, textarea, th, td, code, pre, blockquote, article, section, aside {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+} */
+
+a {
+  color: #61aeff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
