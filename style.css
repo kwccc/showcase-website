@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-} */
-
 .name {
   justify-content: center;
 }
@@ -20,11 +15,20 @@ body {
   color: #e2e8f0;
   background-color: #0f172a;
   padding: 1rem;
-  /* max-width: 1200px; */
-  width: clamp(350px, 50%, 1000px);
+  width: clamp(500px, 50%, 1000px);
   margin: 0 auto;
   transition: all 0.3s ease-in-out;;
   animation: colorSchemeTransition 0.5s ease-out;
+  height: 200vh;
+  text-align: center;
+}
+
+.name-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1, h2 {
@@ -36,9 +40,18 @@ h1, h2 {
   text-wrap: balance;
 }
 
-h1 {
+#name {
   font-size: 2.75rem;
-  margin-top: 2rem;
+  position: sticky;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+}
+
+#content {
+  padding: 20px;
+  font-size: 1.2rem;
 }
 
 h2 {
@@ -69,11 +82,16 @@ section {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);;
   transition: all 0.2s ease-in-out;
   border: 1px solid #334155;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-/* 
-body, a, button, input, select, textarea, th, td, code, pre, blockquote, article, section, aside {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-} */
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 a {
   color: #61aeff;
