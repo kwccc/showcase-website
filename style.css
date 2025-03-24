@@ -15,7 +15,7 @@ body {
   color: #e2e8f0;
   background-color: #0f172a;
   padding: 1rem;
-  width: clamp(500px, 50%, 1000px);
+  width: clamp(350px, 80%, 800px);
   margin: 0 auto;
   transition: all 0.3s ease-in-out;;
   animation: colorSchemeTransition 0.5s ease-out;
@@ -41,12 +41,12 @@ h1, h2 {
 }
 
 #name {
-  font-size: 2.75rem;
   position: sticky;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 5rem;
+  font-size: 3rem;
+  transition: transform 0.1s linear, font-size 0.1s linear;
 }
 
 #content {
