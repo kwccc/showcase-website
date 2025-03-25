@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
   const maxScroll = 200;
   const scale = Math.min(scrollY / maxScroll, 1);
 
-  const newSize = 5 - scale * 2.5;
+  const newSize = 4.5 - scale * 1.5;
 
   name.style.fontSize = `${newSize}rem`;
 });
